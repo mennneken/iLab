@@ -1,0 +1,52 @@
+.over {
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.choice {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  padding: 1em em(48);
+
+  &__elem {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 70%;
+
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: em(230);
+    margin-bottom: 0;
+    margin-right: em(30);
+  }
+
+  @media screen and (min-width: 500px) {
+    width: percentage(1200/1440);
+    margin: 0 auto;
+
+    &__elem {
+      width: em(251);
+      flex-shrink: 1;
+      flex-basis: em(251);
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      & p {
+        width: em(130);
+        text-align: center;
+      }
+    }
+  }
+}

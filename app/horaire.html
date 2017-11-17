@@ -37,36 +37,52 @@
 <body>
   <header class="header header--main-page">
     <div class="header__left">
-      <a href="index.html" class="link link--icn-back">
-        <img class="icn icn--back" src="images/icn_arrow_left.svg" alt="Retour">
-      </a>
+      <a class="header__elem link link--menu">Menu</a>
     </div>
     <div class="header__center">
-      <h1 class="page-title page-title--logo">
-        <img class="logo logo--title" src="images/logo-heaj.svg" alt="Logo HEAJ">
-      </h1>
+      <h1 class="page-title">Horaire</h1>
     </div>
-    <div class="header__right"></div>
+    <div class="header__right">
+      <a class="header__elem header__notification" href="notification.html">
+        <img src="images/icn-bell.svg" alt="Notification">
+      </a>
+    </div>
   </header>
 
+  <nav class="nav nav--close nav--open">
+    <header class="nav__header">
+        <a class="nav__logo" href="index.html">
+          <img src="images/logo-heaj.svg" alt="Haute École Albert Jacquard">
+          <span class="nav__department-indicator">Technique</span>
+        </a>
+      <a class="nav__icn-close" href="#">
+        <img src="images/icn-close.svg" alt="Fermer">
+      </a>
+    </header>
+    <ul class="menu">
+      <li class="menu__el">
+        <a class="menu__link" href="horaire.html">horaire</a>
+      </li>
+      <li class="menu__el">
+        <a class="menu__link menu__el--active" href="professeurs.html">professeurs</a>
+      </li>
+      <li class="menu__el">
+        <a class="menu__link" href="etudiants.html">étudiants</a>
+      </li>
+      <li class="menu__el">
+        <a class="menu__link" href="documents.html">documents</a>
+      </li>
+      <li class="menu__el menu__el--connect">
+        <a class="menu__link" href="#">se connecter</a>
+      </li>
+      <li class="menu__el menu__el--connect">
+        <a class="menu__link" href="#">se connecter</a>
+      </li>
+    </ul>
+  </nav>
+
   <main>
-    <section class="container login">
-      <h2>Votre département</h2>
-      <ul>
-        <li>
-          <a href="technique.html" class="card card--borded card--department input link link--department">Technique</a>
-        </li>
-        <li>
-          <a href="technique.html" class="card card--borded card--department input link link--department">Économie</a>
-        </li>
-        <li>
-          <a href="technique.html" class=" card card--borded card--department input link link--department">Paramédicale</a>
-        </li>
-        <li>
-          <a href="technique.html" class=" card card--borded card--department input link link--department">Pédagogie</a>
-        </li>
-      </ul>
-    </section>
+
   </main>
 
   <!-- build:js scripts/main.min.js -->

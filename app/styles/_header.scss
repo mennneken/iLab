@@ -1,0 +1,60 @@
+.header {
+  padding: 0 em(30);
+  background-color: #FFFFFF;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: em(56);
+  box-shadow: $drop-shadow;
+
+  &__left, &__right {
+    width: 20%;
+  }
+
+  &__center {
+    text-align: center;
+    width: 60%;
+  }
+
+  &__right {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+
+    justify-content: flex-end;
+  }
+
+  &__elem {
+    padding: em(15) 0 em(15) em(15);
+    margin-right: 5px;
+
+    &:last-child{
+      margin-right: 0;
+    }
+
+    & img {
+      margin-top: em(6);
+      width: em(14);
+    }
+  }
+
+  &__notification {
+  }
+}
+
+.page-title {
+  text-transform: uppercase;
+  font-size: em(16);
+  margin: .2em 0 0;
+  @media screen and (min-width: 375px) {
+    font-size: em(18);
+  }
+
+  &--logo {
+    font-size: 1.1111111111em; // 20px
+    margin: .25em 0 0 0;
+  }
+
+}

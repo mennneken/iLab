@@ -37,39 +37,34 @@
 <body>
   <header class="header header--main-page">
     <div class="header__left">
-      <a href="index.html" class="link link--icn-back">
+      <a href="home.html" class="header__elem link link--back">
         <img class="icn icn--back" src="images/icn_arrow_left.svg" alt="Retour">
       </a>
     </div>
     <div class="header__center">
-      <h1 class="page-title page-title--logo">
-        <img class="logo logo--title" src="images/logo-heaj.svg" alt="Logo HEAJ">
-      </h1>
+      <h1 class="page-title">Technique</h1>
     </div>
-    <div class="header__right"></div>
+    <div class="header__right">
+      <!-- <a class="header__elem header__notification" href="notification.html">
+        <img src="images/icn-bell.svg" alt="Notification">
+      </a> -->
+    </div>
   </header>
-
   <main>
-    <section class="container login">
-      <h2>Votre département</h2>
-      <ul>
-        <li>
-          <a href="technique.html" class="card card--borded card--department input link link--department">Technique</a>
-        </li>
-        <li>
-          <a href="technique.html" class="card card--borded card--department input link link--department">Économie</a>
-        </li>
-        <li>
-          <a href="technique.html" class=" card card--borded card--department input link link--department">Paramédicale</a>
-        </li>
-        <li>
-          <a href="technique.html" class=" card card--borded card--department input link link--department">Pédagogie</a>
-        </li>
+    <div class="container">
+      <h2>Un titre</h2>
+    </div>
+    <section class="over">
+      <ul class="choice choice--status">
+        <li class="choice__elem card card--borded"><p>Étudiant</p></li>
+        <li class="choice__elem card card--borded"><p>Professeur</p></li>
+        <li class="choice__elem card card--borded"><p>Membre de l'administration</p></li>
       </ul>
     </section>
   </main>
 
   <!-- build:js scripts/main.min.js -->
+  <script type="text/javascript" src="https://hammerjs.github.io/dist/hammer.min.js"></script>
   <script src="scripts/main.js"></script>
   <!-- endbuild -->
 </body>
