@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Valves Numériques de la Haute École Albert Jacquard">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valves Numériques | HEAJ</title>
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+
+  <!-- Web Application Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Add to homescreen for Chrome on Android -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Valves Numériques HEAJ">
+  <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Valves Numériques HEAJ">
+  <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+  <!-- Tile icon for Win8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+  <meta name="msapplication-TileColor" content="#EB302E">
+
+  <!-- Color the status bar on mobile devices -->
+  <meta name="theme-color" content="#EB302E">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="header header--main-page">
+    <div class="header__left">
+      <a class="header__elem link link--menu">Menu</a>
+    </div>
+    <div class="header__center">
+      <h1 class="page-title">Locaux</h1>
+    </div>
+    <div class="header__right">
+      <a class="header__elem header__notification" href="notification.html">
+        <img src="images/icn-bell.svg" alt="Notification">
+      </a>
+      <a href="#" class="header__elem header__search" href="#">
+        <img src="images/icn-search.svg" alt="Notification">
+      </a>
+    </div>
+  </header>
+
+  <nav class="nav nav--close nav--open">
+    <header class="nav__header">
+        <a class="nav__logo" href="index.html">
+          <img src="images/logo-heaj.svg" alt="Haute École Albert Jacquard">
+          <span class="nav__department-indicator">Technique</span>
+        </a>
+      <a class="nav__icn-close" href="#">
+        <img src="images/icn-close.svg" alt="Fermer">
+      </a>
+    </header>
+    <ul class="menu">
+      <li class="menu__el">
+        <a class="menu__link" href="horaire.html">horaire</a>
+      </li>
+      <li class="menu__el">
+        <a class="menu__link" href="professeurs.html">professeurs</a>
+      </li>
+      <li class="menu__el">
+        <a class="menu__link" href="etudiants.html">étudiants</a>
+      </li>
+      <li class="menu__el">
+        <a class="menu__link menu__el--active" href="documents.html">documents</a>
+      </li>
+      <li class="menu__el menu__el--connect">
+        <a class="menu__link" href="#">se connecter</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main class="container">
+
+  	<div class="card">
+  		<div class="locaux">
+  		<h2 class="locaux__title">Batiment B</h2>
+  		<h3 class="locaux__niveau">Niveau 0 - rez-de-chaussée</h3>
+  		<img src="images/locaux/local_b1.svg" alt="plan batiment B">
+  		<h3 class="locaux__niveau">Niveau 1 - premier étage</h3>
+  		<img src="images/locaux/local_b2.svg" alt="plan batiment B">
+  		</div>
+  	</div>
+  </main>
+
+
+
+  <!-- build:js scripts/main.min.js -->
+  <script src="scripts/main.js"></script>
+  <!-- endbuild -->
+</body>
+</html>
